@@ -4,6 +4,8 @@ This is just a test project that fetches content from Twitter, Youtube and Wikip
 
 Install
 -------
+`npm install`
+
 `npm install -g grunt-cli`
 
 `npm install -g nodemon`
@@ -12,10 +14,10 @@ Install
 
 `bower install` from `www-dev`
 
-
 Deployment
 ----------
 `grunt deploy`
+
 `grunt server` or `NODE_ENV=production grunt server`
 
 Twitter oAuth

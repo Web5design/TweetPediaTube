@@ -2,11 +2,15 @@ TweetPediaTube
 ==============
 This is just a test project that fetches content from Twitter, Youtube and Wikipedia.
 
-Global dependencies
--------------------
+Install
+-------
 `npm install -g grunt-cli`
 
 `npm install -g nodemon`
+
+`npm install -g bower`
+
+`bower install` from `www-dev`
 
 
 Deployment

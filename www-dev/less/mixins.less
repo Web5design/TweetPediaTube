@@ -1,0 +1,58 @@
+/* Mixins
+-------------------------------------------------- */
+.transition (@arg) {
+    -webkit-transition: @arg;  
+       -moz-transition: @arg;
+        -ms-transition: @arg; 
+         -o-transition: @arg;  
+}
+.vertical-gradient (@startColor:#eee, @endColor:white) {
+    background-color: @startColor;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(@startColor), to(@endColor));
+    background-image: -webkit-linear-gradient(top, @startColor, @endColor);
+    background-image: -moz-linear-gradient(top, @startColor, @endColor);
+    background-image: -ms-linear-gradient(top, @startColor, @endColor);
+    background-image: -o-linear-gradient(top, @startColor, @endColor);
+    background-image: linear-gradient(top, @startColor, @endColor);
+}
+.box () {
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+}
+.box-orient (@arg: vertical) {
+    -webkit-box-orient: @arg;
+       -moz-box-orient: @arg;
+            box-orient: @arg;
+}
+.box-flex (@arg: 1) {
+    -webkit-box-flex: @arg;
+       -moz-box-flex: @arg;
+            box-flex: @arg;
+}
+.box-shadow (@arg) {
+    -webkit-box-shadow: @arg;
+       -moz-box-shadow: @arg;
+            box-shadow: @arg;
+}
+.box-align (@arg: center) {
+    -webkit-box-align: @arg;
+       -moz-box-align: @arg;
+            box-align: @arg;
+}
+.box-pack (@arg: center) {
+    -webkit-box-pack: @arg;
+       -moz-box-pack: @arg;
+            box-pack: @arg;
+}
+.border-radius (@arg) {
+    -webkit-border-radius: @arg;
+       -moz-border-radius: @arg;
+            border-radius: @arg;
+}
+.filter (@arg) {
+    -webkit-filter: @arg;  
+       -moz-filter: @arg;
+        -ms-filter: @arg; 
+         -o-filter: @arg;  
+}

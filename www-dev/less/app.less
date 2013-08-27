@@ -1,0 +1,106 @@
+ /* Imports
+-------------------------------------------------- */
+@import 'reset.less';
+@import 'mixins.less';
+
+/* Variables
+-------------------------------------------------- */
+@highlight: rgba(255, 255, 255, 0.3);
+@shadow: rgba(0, 0, 0, 0.1);
+@textColor: #444;
+@font: ~'15px/1.25 "Helvetica Neue", Helvetica, Arial, sans-serif';
+@headerColor: #333;
+
+/* Base
+-------------------------------------------------- */
+body {
+    background: #f0f0f0;
+    color: @textColor;
+    font: @font;
+    font-weight: 300;
+}
+h2 {
+    font-weight: 300;
+}
+h4 {
+    font-weight: 500;
+}
+
+/* Images
+-------------------------------------------------- */
+img {
+    .border-radius(5px);
+}
+
+/* Page
+-------------------------------------------------- */
+#page {
+    &.open {
+        margin-right: 320px;
+    }
+}
+
+/* List
+-------------------------------------------------- */
+.list { 
+    li {
+        .box-shadow(0 0 2px @shadow);
+        .border-radius(3px);
+        .box();
+        .box-orient(horizontal);
+        .box-align(center);
+        .transition(opacity 0.3s ease-in-out);
+        margin: 10px;
+        background: #fff;
+        padding: 10px;
+        color: @textColor;
+        img {
+            margin-right: 10px;
+        }
+        .content {
+            .box-flex(1);
+        }
+    }
+    &.list-hide li {
+        opacity: 0;
+        &.visible {
+            opacity: 1;
+        }
+    }
+}
+
+/* Tooltip
+-------------------------------------------------- */
+#tooltip {
+    position: fixed;
+    background: @headerColor;
+    padding: 10px;
+    color: #fff;
+    width: 300px;
+    right: -100%;
+    bottom: 0;
+    top: 0;
+    overflow: hidden;
+    &.open {
+        right: 0;
+    }
+    h2 {
+        text-align: center;
+    }
+}
+#wikipedia {
+    img {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+}
+
+/* Handle
+-------------------------------------------------- */
+.handle {
+    background: @headerColor;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+    font-weight: 300;
+}

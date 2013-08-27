@@ -11,10 +11,8 @@ Global dependencies
 
 Deployment
 ----------
-`grunt server`
-
 `grunt deploy`
-
+`grunt server` or `NODE_ENV=production grunt server`
 
 Twitter oAuth
 -------------

@@ -115,6 +115,6 @@ module.exports = function (grunt) {
 
     // Tasks
     grunt.registerTask('compile', ['jshint', 'hogan']);
-    grunt.registerTask('deploy', ['clean', 'compile', 'requirejs', 'less', 'targethtml', 'copy', 'groundskeeper']);
+    grunt.registerTask('deploy', ['clean', 'compile', 'requirejs', 'less', 'targethtml', 'copy']);
     grunt.registerTask('server', ['bgShell:runNode', 'compile', 'watch']);
 };

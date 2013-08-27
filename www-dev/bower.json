@@ -1,0 +1,11 @@
+{
+  "name": "www-dev",
+  "dependencies": {
+    "backbone": "~1.0.0",
+    "zepto": "~1.0.0",
+    "underscore": "1.4.4",
+    "hogan": "latest",
+    "less.js": "~1.4.0-b4",
+    "requirejs": "~2.1.8"
+  }
+}
